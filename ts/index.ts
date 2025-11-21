@@ -184,22 +184,43 @@ let notDefined: undefined = undefined;
 // data.noProblem();
 
 //!   array
-let numbers: number[] = [2, 1, 5, 5, 55, 4, 4, 444];
+// let numbers: number[] = [2, 1, 5, 5, 55, 4, 4, 444];
 
-let names: Array<string> = ["a", "b"]; //generic way
+// let names: Array<string> = ["a", "b"]; //generic way
 
 //  tuple way to right typescript
-let user: [string, number][] = [
-  ["Rashedul", 12],
-  ["Rashedul", 12],
-];
+// let user: [string, number][] = [
+//   ["Rashedul", 12],
+//   ["Rashedul", 12],
+// ];
 // console.log(user);
 
 // js
-const users = [name, age];
-// ts
-let tsUser: [string, number][] = [
-  ["rashedul islam", 45],
-  ["rashedul islam", 45],
-];
-console.log(tsUser);
+// const users = [name, age];
+// // ts
+// let tsUser: [string, number][] = [
+//   ["rashedul islam", 45],
+//   ["rashedul islam", 45],
+// ];
+// console.log(tsUser);
+
+//! Enums
+
+// enum Role {
+//   admin,
+//   user,
+//   guest,
+//   moderator,
+// }
+
+// let userRole: Role = Role.admin;
+// console.log(userRole);
+
+//! unknown type
+
+// let data: unknown = "hello typescript";
+// if (typeof data === "string") {
+//   console.log(data.toUpperCase());
+// } else {
+//   console.log("this is number", data);
+// }
