@@ -224,3 +224,21 @@ let notDefined: undefined = undefined;
 // } else {
 //   console.log("this is number", data);
 // }
+
+//! never type
+
+//  this function !return
+
+// function throwError(message: string) {
+//   throw new Error(message);
+// }
+
+// throwError("something wrong");
+
+//!  void
+function message(message: string): void {
+  console.log(message);
+  // return message + "World";
+}
+
+message("Hello");
