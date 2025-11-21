@@ -43,5 +43,72 @@ function testType(value: any) {
 const newArray: number[] = [2, 2, 3, 4, 5, 6, 7, 5];
 const characters: string[] = ["a", "b"];
 
-const result = characters.includes("c");
-console.log(result);
+// const result = characters.includes("c");
+// console.log(result);
+
+// !tuples
+// let coordinates: [number, number, number] = [12, 4, 745, 42, 4];
+
+let userData: [string, number] = ["Hello", 423424];
+
+//! enum
+
+enum color {
+  red = 3,
+  green,
+  blue,
+}
+
+// console.log(color.blue);
+
+// let colorR: color = color.green;
+// console.log(color.blue);
+
+// enum
+
+enum size {
+  small,
+  medium,
+  large,
+}
+
+const startSize: size = size.large;
+
+// console.log(startSize);
+
+//  unknown type
+
+// let notSure: unknown = "string";
+
+// if (typeof notSure === "s") {
+//   notSure.toFixed(2);
+// } else if (typeof (notSure === "1")) {
+// }
+
+// !naver type
+
+// function add(a: number, b: number): number {
+//   return a + b;
+// }
+
+// const result = add(2, 10);
+// console.log(result);
+
+// let name: string[] = ["Rashedul", "xyz", "pqu"];
+// let age: number[] = [25, 30, 40, 45];
+
+// type user = {
+//   name: string;
+//   email: string;
+//   phoneNumber: number;
+//   age: string;
+// };
+
+// const number: user = {
+//   name: "Rashedul Islam",
+//   email: "xyz@gmail.com",
+//   phoneNumber: 1728484548,
+//   age: "12",
+// };
+
+// console.log(number);

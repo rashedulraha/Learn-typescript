@@ -7,11 +7,11 @@
  * 6. setup type script compiler
  * 7. debugging typescript application
  * 8. basic type ✔
- * 9. any type
- * 10.array
- * 11.tuples
- * 12.enums
- * 13.unknown type
+ * 9. any type ✔
+ * 10.array✔
+ * 11.tuples✔
+ * 12.enums✔
+ * 13.unknown type ✔
  * 14.never type
  * 15.void type
  * 16. type interface and type assertions
