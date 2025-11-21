@@ -6,7 +6,7 @@
  * 5. pros and cons of type script
  * 6. setup type script compiler
  * 7. debugging typescript application
- * 8. basic type
+ * 8. basic type ✔
  * 9. any type
  * 10.array
  * 11.tuples
