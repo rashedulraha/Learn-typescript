@@ -236,9 +236,30 @@ let notDefined: undefined = undefined;
 // throwError("something wrong");
 
 //!  void
-function message(message: string): void {
-  console.log(message);
-  // return message + "World";
+// function message(message: string): void {
+//   console.log(message);
+//   // return message + "World";
+// }
+
+// message("Hello");
+
+//! type interface and type assertions
+
+interface Person {
+  name: string;
+  age: number;
+  email?: string; // optional
+  readonly id: number; //only read
 }
 
-message("Hello");
+let PersonalInformation: Person = {
+  name: "Rashedul",
+  age: 21,
+  id: 12,
+};
+
+PersonalInformation = { ...PersonalInformation, age: 12, id: 122 };
+
+console.log(PersonalInformation);
+
+//! Type Alias (type keyword )
