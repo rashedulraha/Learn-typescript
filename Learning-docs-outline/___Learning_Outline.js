@@ -12,7 +12,7 @@
  * 11.tuples✔
  * 12.enums✔
  * 13.unknown type ✔
- * 14.never type
+ * 14.never type✔
  * 15.void type
  * 16. type interface and type assertions
  * 17. union types

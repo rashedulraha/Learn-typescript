@@ -53,11 +53,11 @@ let userData: [string, number] = ["Hello", 423424];
 
 //! enum
 
-enum color {
-  red = 3,
-  green,
-  blue,
-}
+// enum color {
+//   red = 3,
+//   green,
+//   blue,
+// }
 
 // console.log(color.blue);
 
@@ -112,3 +112,55 @@ const startSize: size = size.large;
 // };
 
 // console.log(number);
+
+//! interface
+
+// interface product {
+//   id: number;
+//   title: string;
+//   price: number;
+//   isStock: boolean;
+// }
+
+// function displayProducts(product: product) {
+//   console.log(`product : ${product.title} price: ${product.price}`);
+// }
+
+// let obj: { name: string; age: number } = {
+//   name: "abc",
+//   age: 10,
+// };
+
+// obj = { ...obj, age: 50 };
+
+// console.log(obj);
+
+// ! 11.tuples
+
+// let arr: [number, string] = [1, "Rashedul"];
+// const coordinators: [number, number, number] = [10, 20, 30];
+
+// let response:[]=[]
+
+// enum color {
+//   red = "red",
+//   green = "green",
+//   blue = "blue",
+// }
+
+// console.log(color.blue);
+
+//!  naver type
+
+function throwError(message: string): never {
+  throw new Error(message);
+}
+
+// throwError("something weng  wrong");
+
+//! void type
+
+function logMessage(message: string): void {
+  console.log(message);
+}
+logMessage("Checking message");
