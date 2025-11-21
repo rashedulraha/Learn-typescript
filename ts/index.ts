@@ -148,19 +148,31 @@ const startSize: size = size.large;
 //   blue = "blue",
 // }
 
-// console.log(color.blue);
+// // console.log(color.blue);
 
-//!  naver type
+// //!  naver type
 
-function throwError(message: string): never {
-  throw new Error(message);
-}
+// function throwError(message: string): never {
+//   throw new Error(message);
+// }
 
-// throwError("something weng  wrong");
+// // throwError("something weng  wrong");
 
-//! void type
+// //! void type
 
-function logMessage(message: string): void {
-  console.log(message);
-}
-logMessage("Checking message");
+// // function logMessage(message: string): void {
+// //   console.log(message);
+// // }
+// // logMessage("Checking message");
+
+//!  before  revision
+
+// basic type
+let age: number = 12;
+let name: string = "Rashedul Islam";
+let isStudent: boolean = true;
+let hobbies: string[] = ["cricket", "coding", "Programming"];
+
+let nothing: null = null;
+
+let notDefined: undefined = undefined;
