@@ -176,3 +176,30 @@ let hobbies: string[] = ["cricket", "coding", "Programming"];
 let nothing: null = null;
 
 let notDefined: undefined = undefined;
+
+//!  any type
+// let data: any = 10;
+// data = "hello";
+// data = true;
+// data.noProblem();
+
+//!   array
+let numbers: number[] = [2, 1, 5, 5, 55, 4, 4, 444];
+
+let names: Array<string> = ["a", "b"]; //generic way
+
+//  tuple way to right typescript
+let user: [string, number][] = [
+  ["Rashedul", 12],
+  ["Rashedul", 12],
+];
+// console.log(user);
+
+// js
+const users = [name, age];
+// ts
+let tsUser: [string, number][] = [
+  ["rashedul islam", 45],
+  ["rashedul islam", 45],
+];
+console.log(tsUser);
