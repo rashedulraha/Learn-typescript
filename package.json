@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "axios": "^1.13.2",
+    "tailwindcss": "^4.1.17",
     "ts-node": "^10.9.2"
   }
 }

@@ -313,3 +313,5 @@ let notDefined: undefined = undefined;
 //     console.log(value.toUpperCase()); //?value true to string
 //   }
 // }
+
+// ! interface vs type aliases
