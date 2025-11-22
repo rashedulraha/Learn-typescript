@@ -273,27 +273,43 @@ let notDefined: undefined = undefined;
 
 //! Type Assertion (as keyword)
 
-let someValue: any = "this is a string";
-let strLength: number = (someValue as string).length;
+// let someValue: any = "this is a string";
+// let strLength: number = (someValue as string).length;
 
-// or angle bracket
-let strLength2 = (<string>someValue).length;
+// // or angle bracket
+// let strLength2 = (<string>someValue).length;
 
 //! Union type
 
-let id: string | number;
+// let id: string | number;
 
-id = "101";
-id = 101;
+// id = "101";
+// id = 101;
 
-//id = true //!error
+// //id = true //!error
 
-function printId(id: string | number) {
-  console.log(`your id is ${id}`);
+// function printId(id: string | number) {
+//   console.log(`your id is ${id}`);
 
-  if (typeof id === "string") {
-    console.log(id.toLocaleLowerCase());
-  }
-}
+//   if (typeof id === "string") {
+//     console.log(id.toLocaleLowerCase());
+//   }
+// }
 
-printId(id);
+// printId(id);
+
+//! type narrowing
+
+// function padLeft(padding: number | string, input: string) {
+//   if (typeof padding === "number") {
+//     return " ".repeat(padding) + input; //? padding true number
+//   }
+
+//   return padding + input; //? padding true string
+// }
+
+// function printValue(value: string | null | undefined) {
+//   if (value != null) {
+//     console.log(value.toUpperCase()); //?value true to string
+//   }
+// }
