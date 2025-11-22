@@ -245,21 +245,55 @@ let notDefined: undefined = undefined;
 
 //! type interface and type assertions
 
-interface Person {
-  name: string;
-  age: number;
-  email?: string; // optional
-  readonly id: number; //only read
+// interface Person {
+//   name: string;
+//   age: number;
+//   email?: string; // optional
+//   readonly id: number; //only read
+// }
+
+// let PersonalInformation: Person = {
+//   name: "Rashedul",
+//   age: 21,
+//   id: 12,
+// };
+
+// PersonalInformation = { ...PersonalInformation, age: 12, id: 122 };
+
+// console.log(PersonalInformation);
+
+// //! Type Alias (type keyword )
+
+// type point = {
+//   x: number;
+//   y: number;
+// };
+
+// type id = string | number;
+
+//! Type Assertion (as keyword)
+
+let someValue: any = "this is a string";
+let strLength: number = (someValue as string).length;
+
+// or angle bracket
+let strLength2 = (<string>someValue).length;
+
+//! Union type
+
+let id: string | number;
+
+id = "101";
+id = 101;
+
+//id = true //!error
+
+function printId(id: string | number) {
+  console.log(`your id is ${id}`);
+
+  if (typeof id === "string") {
+    console.log(id.toLocaleLowerCase());
+  }
 }
 
-let PersonalInformation: Person = {
-  name: "Rashedul",
-  age: 21,
-  id: 12,
-};
-
-PersonalInformation = { ...PersonalInformation, age: 12, id: 122 };
-
-console.log(PersonalInformation);
-
-//! Type Alias (type keyword )
+printId(id);
