@@ -315,3 +315,18 @@ let notDefined: undefined = undefined;
 // }
 
 // ! interface vs type aliases
+
+//  ? object in typescript
+const data: {
+  name: string;
+  lastName: string;
+  readonly age: number;
+  village: string;
+} = {
+  name: "Rashedul",
+  lastName: "Islam",
+  age: 45,
+  village: "Gaganpur",
+};
+
+data.age = 45;
