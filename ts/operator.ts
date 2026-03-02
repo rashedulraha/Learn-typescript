@@ -29,4 +29,22 @@
 
   const newResultMentor = { ...mentorOne, ...mentorTwo };
   console.log(newResultMentor);
+
+  // ! lear rest operator
+
+  const friendResult = (...friends: string[]) => {
+    // return `Hi ${name1} ${name2} ${name3} ${name4}`;
+
+    friends.forEach((element: string) => console.log(`Hi ${element}`));
+    return 0;
+  };
+
+  const result = friendResult(
+    "Rashedul",
+    "Romman",
+    "Abdullah",
+    "Faim",
+    "Rasel",
+  );
+  console.log(result);
 }
