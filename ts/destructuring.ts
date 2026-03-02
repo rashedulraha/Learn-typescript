@@ -19,8 +19,16 @@
 
   //!  arr destructuring
 
-  const myFriends = ["Rashedul", "Romman", "Abdullah", "Kibria"];
+  const myFriends = [
+    "Rashedul",
+    "Romman",
+    "Abdullah",
+    "Kibria",
+    "Ariful islam",
+  ];
 
-  const [, b, c, d] = myFriends;
-  console.log(b, c, d);
+  const [, b, c, ...rest] = myFriends;
+
+  rest.map((r) => console.log(r));
+  console.log(b, c, rest);
 }
