@@ -14,7 +14,7 @@
   //   bloodGroup: "A+" | "B+" | "AB+" | "O+";
   // };
 
-  //   use user type alias
+  // use user type alias
 
   // const user1: User = {
   //   name: "Rashedul",
