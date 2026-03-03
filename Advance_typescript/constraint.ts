@@ -23,4 +23,34 @@
     email: "y@gmail.com",
     devType: "Backend",
   });
+
+  // generic  constraint  with keyof operator
+
+  type vehicle = {
+    bike: string;
+    car: string;
+    ship: string;
+  };
+
+  type Owner = "bike" | "car" | "ship";
+  type Owner2 = keyof vehicle;
+
+  const user = {
+    name: " Mr.  Rashed",
+    age: 50,
+    address: "ctg",
+    city: "naogaon",
+  };
+
+  const car = {
+    model: "FSNND88H",
+    color: "black",
+  };
+
+  const getPropertyValue = <X, Y extends keyof X>(obj: X, key: Y) => {
+    return obj[key];
+  };
+
+  const result1 = getPropertyValue(user, "name");
+  const result2 = getPropertyValue(car, "color");
 }
