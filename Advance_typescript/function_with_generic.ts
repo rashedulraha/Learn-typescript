@@ -47,4 +47,23 @@
 
   console.log(createResult);
   console.log(result);
+
+  //!  add course to student
+
+  const addCourseToStudent = <T>(student: T) => {
+    const course = { courseOne: "nextLevelWebDevelopment" };
+    return { ...student, ...course };
+  };
+
+  const student1 = addCourseToStudent({
+    name: "Mr.X",
+    email: "x@gmail.com",
+    devType: "Frontend",
+  });
+
+  const student2 = addCourseToStudent({
+    name: "Mr.Y",
+    email: "y@gmail.com",
+    devType: "Backend",
+  });
 }
