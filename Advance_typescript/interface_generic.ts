@@ -1,7 +1,7 @@
 {
   //  interface generic type
 
-  interface Developer<T> {
+  interface Developer<T, X = null> {
     name: string;
     computer: {
       brand: string;
@@ -9,13 +9,17 @@
       releaseYear: number;
     };
     smartWatch: T;
+    bike?: X;
   }
 
-  const poorDeveloper: Developer<{
+  // interface poor developer
+  interface HpDeveloper {
     brand: string;
     model: string;
     display: string;
-  }> = {
+  }
+
+  const poorDeveloper: Developer<HpDeveloper> = {
     name: "Rashedul",
     computer: {
       brand: "dell",
@@ -28,13 +32,16 @@
       display: "OLED",
     },
   };
-  const RichDeveloper: Developer<{
+
+  interface AppleDeveloper {
     brand: string;
     model: string;
     display: string;
     sleepTrack: boolean;
     heartTrack: boolean;
-  }> = {
+  }
+  //! rich developer type interface
+  const RichDeveloper: Developer<AppleDeveloper> = {
     name: "Abdullah",
     computer: {
       brand: "Apple",
