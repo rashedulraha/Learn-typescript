@@ -5,6 +5,7 @@
   anything = "Next level web development";
 
   anything = 202;
+
   //  ( anything as number).
 
   const kgToGm = (value: string | number): string | number | undefined => {
