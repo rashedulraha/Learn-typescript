@@ -30,4 +30,26 @@
     age: 56,
     role: "admin",
   };
+
+  //  array in type
+  type Roll1 = number[];
+
+  //  array in interfaces
+  interface Roll2 {
+    [index: number]: number;
+  }
+
+  const rollNumber: Roll2 = [1, 2, 3];
+
+  //!  type interface and type in function
+  // using type
+  type Add1 = (num1: number, num2: number) => number;
+  // using interfaces
+  interface Add2 {
+    (num1: number, num2: number): number;
+  }
+
+  const add: Add2 = (num1, num2) => {
+    return num1 + num2;
+  };
 }
