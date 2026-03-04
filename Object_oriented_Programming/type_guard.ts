@@ -1,6 +1,6 @@
 {
   // type guard using typeof  & in
-  //  type of --> type guard
+  //!  type of --> type guard
 
   type Alphanumeric = string | number;
 
@@ -17,7 +17,7 @@
   const result2 = add("5", "5");
   console.log(result2);
 
-  //  type in guard
+  //!  type in guard
 
   type NormalUser = {
     name: string;
