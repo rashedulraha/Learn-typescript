@@ -27,7 +27,7 @@
     }
 
     takeClass(numOfClass: number) {
-      console.log(`${this.name} Will sleep for ${numOfClass}`);
+      console.log(`${this.name} Will take ${numOfClass} classes`);
     }
   }
 
